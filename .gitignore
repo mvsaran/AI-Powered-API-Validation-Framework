@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# Test results and reports
+test-results/
+allure-results/
+allure-report/
+playwright-report/
+blob-report/
+playwright-report/
+
+# Build outputs
+dist/
+
+# Local configuration files
+.env
