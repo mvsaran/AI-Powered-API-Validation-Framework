@@ -1,0 +1,23 @@
+{
+  "status": 200,
+  "statusText": "OK",
+  "headers": {
+    "content-type": "application/json",
+    "access-control-allow-origin": "*",
+    "date": "Mon, 25 May 2026 11:48:22 GMT",
+    "connection": "keep-alive",
+    "keep-alive": "timeout=5",
+    "transfer-encoding": "chunked"
+  },
+  "body": {
+    "ndc": "50090-2849-0",
+    "contractDiscount": 0.15,
+    "awpPrice": 100,
+    "ingredientCost": 85,
+    "dispensingFee": 2.5,
+    "allowedAmount": 87.5,
+    "patientCopay": 10,
+    "planPaid": 77.5
+  },
+  "durationMs": 48
+}

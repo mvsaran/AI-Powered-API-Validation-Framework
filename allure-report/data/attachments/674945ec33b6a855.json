@@ -1,0 +1,4 @@
+{
+  "status": "PASS",
+  "reasoning": "Pricing calculation validated. Ingredient cost matches the contracted rate of AWP minus 15% discount. Dispensing fee and allowed totals sum correctly."
+}

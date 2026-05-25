@@ -1,0 +1,4 @@
+{
+  "status": "PASS",
+  "reasoning": "Eligibility check verified. Patient is ACTIVE under Group ID RX8821, Plan code PPO-GOLD. Copay and deductible accumulators are initialized correctly."
+}

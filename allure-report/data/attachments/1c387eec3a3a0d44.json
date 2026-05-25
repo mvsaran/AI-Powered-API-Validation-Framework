@@ -1,0 +1,12 @@
+{
+  "url": "http://localhost:3001/api/claims/humira",
+  "method": "POST",
+  "headers": {},
+  "body": {
+    "memberId": "MBR100021",
+    "groupId": "RX8821",
+    "ndc": "00074-4339-02",
+    "quantity": 2,
+    "daysSupply": 30
+  }
+}

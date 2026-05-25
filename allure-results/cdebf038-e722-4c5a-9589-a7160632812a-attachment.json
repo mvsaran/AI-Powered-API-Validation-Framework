@@ -1,0 +1,5 @@
+{
+  "status": "FAIL",
+  "reasoning": "The claim adjudication was rejected by the processor. Claim rejected with code 75 (Prior Authorization Required). The drug requested is a specialty medication and is restricted unless a prior authorization (PA) approval is registered for the patient.",
+  "possibleRootCause": "Member does not have an active prior authorization approval on file for this specific National Drug Code (NDC)."
+}

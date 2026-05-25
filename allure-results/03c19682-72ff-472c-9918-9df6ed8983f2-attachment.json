@@ -1,0 +1,5 @@
+{
+  "status": "FAIL",
+  "reasoning": "Eligibility check failed. The patient record status is INACTIVE. Coverage was terminated effective the end of the previous calendar month.",
+  "possibleRootCause": "Member coverage has lapsed or been terminated by the employer group."
+}

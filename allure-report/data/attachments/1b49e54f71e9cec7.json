@@ -1,0 +1,4 @@
+{
+  "status": "PASS",
+  "reasoning": "The pharmacy claim was successfully adjudicated. Status is PAID. Ingredient costs, dispensing fees, and copay calculations are consistent with standard Tier 1 generic plan benefits (patient copay of $10.00)."
+}

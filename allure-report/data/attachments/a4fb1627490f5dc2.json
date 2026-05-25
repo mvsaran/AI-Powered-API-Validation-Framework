@@ -1,0 +1,12 @@
+{
+  "url": "http://localhost:3001/api/claims/nexium",
+  "method": "POST",
+  "headers": {},
+  "body": {
+    "memberId": "MBR100021",
+    "groupId": "RX8821",
+    "ndc": "0186-5040-31",
+    "quantity": 30,
+    "daysSupply": 30
+  }
+}

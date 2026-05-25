@@ -1,0 +1,5 @@
+{
+  "status": "FAIL",
+  "reasoning": "The claim has been rejected with a reject code of '70' indicating that the product/service is not covered due to being non-formulary. The rejection details do not provide any additional information on how to resolve this issue.",
+  "possibleRootCause": "Patient may need to consult their healthcare provider or pharmacist to explore alternative treatment options."
+}

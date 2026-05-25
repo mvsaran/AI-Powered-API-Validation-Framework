@@ -1,0 +1,6 @@
+{
+  "url": "http://localhost:3001/api/eligibility/inactive",
+  "method": "GET",
+  "headers": {},
+  "body": null
+}

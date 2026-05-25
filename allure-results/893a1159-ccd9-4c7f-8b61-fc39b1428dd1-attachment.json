@@ -1,0 +1,39 @@
+{
+  "status": 200,
+  "statusText": "OK",
+  "headers": {
+    "content-type": "application/json",
+    "access-control-allow-origin": "*",
+    "date": "Mon, 25 May 2026 11:53:14 GMT",
+    "connection": "keep-alive",
+    "keep-alive": "timeout=5",
+    "transfer-encoding": "chunked"
+  },
+  "body": {
+    "claimId": "CLM-909283",
+    "memberId": "MBR100021",
+    "groupId": "RX8821",
+    "rxNumber": "RX7788124",
+    "ndc": "0186-5040-31",
+    "drugName": "Nexium 40mg Capsule",
+    "quantity": 30,
+    "daysSupply": 30,
+    "status": "REJECTED",
+    "pricing": {
+      "ingredientCost": 240,
+      "dispensingFee": 2.5,
+      "salesTax": 0,
+      "allowedAmount": 0,
+      "patientCopay": 0,
+      "planPaid": 0
+    },
+    "rejectionDetails": {
+      "rejectCode": "70",
+      "rejectDescription": "Product/Service Not Covered - Non-Formulary"
+    },
+    "formularyTier": "NON-FORMULARY",
+    "priorAuthRequired": false,
+    "timestamp": "2026-05-25T11:53:13.716Z"
+  },
+  "durationMs": 7
+}

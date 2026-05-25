@@ -1,0 +1,39 @@
+{
+  "status": 200,
+  "statusText": "OK",
+  "headers": {
+    "content-type": "application/json",
+    "access-control-allow-origin": "*",
+    "date": "Mon, 25 May 2026 11:53:14 GMT",
+    "connection": "keep-alive",
+    "keep-alive": "timeout=5",
+    "transfer-encoding": "chunked"
+  },
+  "body": {
+    "claimId": "CLM-909282",
+    "memberId": "MBR100021",
+    "groupId": "RX8821",
+    "rxNumber": "RX7788123",
+    "ndc": "00074-4339-02",
+    "drugName": "Humira 40mg Pen",
+    "quantity": 2,
+    "daysSupply": 30,
+    "status": "REJECTED",
+    "pricing": {
+      "ingredientCost": 3500,
+      "dispensingFee": 15,
+      "salesTax": 0,
+      "allowedAmount": 0,
+      "patientCopay": 0,
+      "planPaid": 0
+    },
+    "rejectionDetails": {
+      "rejectCode": "75",
+      "rejectDescription": "Prior Authorization Required"
+    },
+    "formularyTier": "TIER-3",
+    "priorAuthRequired": true,
+    "timestamp": "2026-05-25T11:53:13.716Z"
+  },
+  "durationMs": 6
+}

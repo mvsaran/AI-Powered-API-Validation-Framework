@@ -1,0 +1,5 @@
+{
+  "status": "FAIL",
+  "reasoning": "Pricing validation failed. The contract discount is 15%, but calculated ingredient cost ($95) does not equal expected cost ($85). Additionally, Patient Copay ($10) + Plan Paid ($77.5) does not equal Allowed Amount ($97.5).",
+  "possibleRootCause": "Pricing calculation discrepancy in the adjudication engine. Check contract rate tables or discount formulas."
+}

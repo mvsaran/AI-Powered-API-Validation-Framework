@@ -1,0 +1,35 @@
+{
+  "status": 200,
+  "statusText": "OK",
+  "headers": {
+    "content-type": "application/json",
+    "access-control-allow-origin": "*",
+    "date": "Mon, 25 May 2026 11:49:04 GMT",
+    "connection": "keep-alive",
+    "keep-alive": "timeout=5",
+    "transfer-encoding": "chunked"
+  },
+  "body": {
+    "claimId": "CLM-909281",
+    "memberId": "MBR100021",
+    "groupId": "RX8821",
+    "rxNumber": "RX7788122",
+    "ndc": "50090-2849-0",
+    "drugName": "Metformin 500mg",
+    "quantity": 60,
+    "daysSupply": 30,
+    "status": "PAID",
+    "pricing": {
+      "ingredientCost": 12,
+      "dispensingFee": 2,
+      "salesTax": 0,
+      "allowedAmount": 14,
+      "patientCopay": 10,
+      "planPaid": 4
+    },
+    "formularyTier": "TIER-1",
+    "priorAuthRequired": false,
+    "timestamp": "2026-05-25T11:49:04.106Z"
+  },
+  "durationMs": 46
+}

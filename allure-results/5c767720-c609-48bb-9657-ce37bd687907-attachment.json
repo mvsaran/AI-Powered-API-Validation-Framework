@@ -1,0 +1,27 @@
+{
+  "status": 200,
+  "statusText": "OK",
+  "headers": {
+    "content-type": "application/json",
+    "access-control-allow-origin": "*",
+    "date": "Mon, 25 May 2026 11:53:14 GMT",
+    "connection": "keep-alive",
+    "keep-alive": "timeout=5",
+    "transfer-encoding": "chunked"
+  },
+  "body": {
+    "status": "ACTIVE",
+    "memberId": "MBR100021",
+    "effectiveStartDate": "2025-01-01",
+    "effectiveEndDate": "2026-12-31",
+    "groupNumber": "RX8821",
+    "planName": "PPO-GOLD",
+    "accumulators": {
+      "deductibleMax": 1500,
+      "deductibleMet": 350,
+      "oopMax": 5000,
+      "oopMet": 1200
+    }
+  },
+  "durationMs": 5
+}

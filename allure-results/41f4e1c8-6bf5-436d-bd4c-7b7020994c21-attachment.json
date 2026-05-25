@@ -1,0 +1,12 @@
+{
+  "url": "http://localhost:3001/api/claims/metformin",
+  "method": "POST",
+  "headers": {},
+  "body": {
+    "memberId": "MBR100021",
+    "groupId": "RX8821",
+    "ndc": "50090-2849-0",
+    "quantity": 60,
+    "daysSupply": 30
+  }
+}

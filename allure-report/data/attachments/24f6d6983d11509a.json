@@ -1,0 +1,5 @@
+{
+  "status": "FAIL",
+  "reasoning": "The member status is INACTIVE, which indicates that the member is not currently eligible for coverage. The effective coverage dates do not encompass the current transaction date.",
+  "possibleRootCause": "Member ineligibility due to inactive status"
+}

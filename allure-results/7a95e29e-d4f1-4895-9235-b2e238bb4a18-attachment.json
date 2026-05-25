@@ -1,0 +1,5 @@
+{
+  "status": "FAIL",
+  "reasoning": "The claim adjudication was rejected by the processor. Claim rejected with code 70 (Product/Service Not Covered). The requested drug is classified as non-formulary under the member's specific benefit plan tier.",
+  "possibleRootCause": "The prescribed medication is excluded from the formulary list. Alternative covered medications should be recommended."
+}

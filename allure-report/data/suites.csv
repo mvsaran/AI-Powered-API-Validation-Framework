@@ -1,0 +1,205 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"
+### AI Validation Status: **FAIL**
+**Reasoning:**
+Pricing validation failed. The contract discount is 15%, but calculated ingredient cost ($95) does not equal expected cost ($85). Additionally, Patient Copay ($10) + Plan Paid ($77.5) does not equal Allowed Amount ($97.5).
+
+**Possible Root Cause:**
+Stale AWP pricing file or incorrect discount percentage loaded in the claim processing engine.
+","31","Scenario 7: Contract Pricing Calculations - Discrepancy (Expected FAIL)","","2026-05-25","passed","2026-05-25","Pharmacy Drug Pricing - AI Validation","","",""
+"
+### AI Validation Status: **PASS**
+**Reasoning:**
+Pricing calculation validated. Ingredient cost matches the contracted rate of AWP minus 15% discount. Dispensing fee and allowed totals sum correctly.
+
+","28","Scenario 6: Contract Pricing Calculations - Consistent (Expected PASS)","","2026-05-25","passed","2026-05-25","Pharmacy Drug Pricing - AI Validation","","",""
+"
+### AI Validation Status: **PASS**
+**Reasoning:**
+Eligibility check verified. Patient is ACTIVE under Group ID RX8821, Plan code PPO-GOLD. Copay and deductible accumulators are initialized correctly.
+
+","41","Scenario 4: Active Member Eligibility Check (Expected PASS)","","2026-05-25","passed","2026-05-25","Healthcare Member Eligibility - AI Validation","","",""
+"
+### AI Validation Status: **FAIL**
+**Reasoning:**
+The claim adjudication was rejected by the processor. Claim rejected with code 70 (Product/Service Not Covered). The requested drug is classified as non-formulary under the member's specific benefit plan tier.
+
+**Possible Root Cause:**
+The prescribed medication is excluded from the formulary list. Alternative covered medications should be recommended.
+","32","Scenario 3: Rejected Non-Formulary Nexium (Expected FAIL - Drug Excluded)","","2026-05-25","passed","2026-05-25","Healthcare Pharmacy Claim Adjudication - AI Validation","","",""
+"
+### AI Validation Status: **FAIL**
+**Reasoning:**
+The claim adjudication was rejected by the processor. Claim rejected with code 70 (Product/Service Not Covered). The requested drug is classified as non-formulary under the member's specific benefit plan tier.
+
+**Possible Root Cause:**
+The prescribed medication is excluded from the formulary list. Alternative covered medications should be recommended.
+","37","Scenario 3: Rejected Non-Formulary Nexium (Expected FAIL - Drug Excluded)","","2026-05-25","passed","2026-05-25","Healthcare Pharmacy Claim Adjudication - AI Validation","","",""
+"
+### AI Validation Status: **PASS**
+**Reasoning:**
+The member status is ACTIVE, effective coverage dates (2025-01-01 to 2026-12-31) encompass the current transaction date, and benefit identifiers (Group ID: RX8821, Plan Code: PPO-GOLD) are valid. Deductible, copay accumulator limits, and remaining balances are correctly initialized.
+
+","41009","Scenario 4: Active Member Eligibility Check (Expected PASS)","","2026-05-25","passed","2026-05-25","Healthcare Member Eligibility - AI Validation","","",""
+"
+### AI Validation Status: **FAIL**
+**Reasoning:**
+Pricing validation failed. The contract discount is 15%, but calculated ingredient cost ($95) does not equal expected cost ($85). Additionally, Patient Copay ($10) + Plan Paid ($77.5) does not equal Allowed Amount ($97.5).
+
+**Possible Root Cause:**
+Pricing calculation discrepancy in the adjudication engine. Check contract rate tables or discount formulas.
+","33","Scenario 7: Contract Pricing Calculations - Discrepancy (Expected FAIL)","","2026-05-25","failed","2026-05-25","Pharmacy Drug Pricing - AI Validation","","",""
+"
+### AI Validation Status: **FAIL**
+**Reasoning:**
+The claim adjudication was rejected by the processor. Claim rejected with code 75 (Prior Authorization Required). The drug requested is a specialty medication and is restricted unless a prior authorization (PA) approval is registered for the patient.
+
+**Possible Root Cause:**
+Member does not have an active prior authorization approval on file for this specific National Drug Code (NDC).
+","35","Scenario 2: Rejected Specialty Drug Humira (Expected FAIL - Missing PA)","","2026-05-25","passed","2026-05-25","Healthcare Pharmacy Claim Adjudication - AI Validation","","",""
+"
+### AI Validation Status: **PASS**
+**Reasoning:**
+The pharmacy claim was successfully adjudicated. Status is PAID. Ingredient costs, dispensing fees, and copay calculations are consistent with standard Tier 1 generic plan benefits (patient copay of $10.00).
+
+","135","Scenario 1: Paid Metformin Generic Claim (Expected PASS)","","2026-05-25","passed","2026-05-25","Healthcare Pharmacy Claim Adjudication - AI Validation","","",""
+"
+### AI Validation Status: **FAIL**
+**Reasoning:**
+Pricing validation failed. The contract discount is 15%, but calculated ingredient cost ($95) does not equal expected cost ($85). Additionally, Patient Copay ($10) + Plan Paid ($77.5) does not equal Allowed Amount ($97.5).
+
+**Possible Root Cause:**
+Stale AWP pricing file or incorrect discount percentage loaded in the claim processing engine.
+","26","Scenario 7: Contract Pricing Calculations - Discrepancy (Expected FAIL)","","2026-05-25","passed","2026-05-25","Pharmacy Drug Pricing - AI Validation","","",""
+"
+### AI Validation Status: **PASS**
+**Reasoning:**
+Pricing calculation validated. Ingredient cost matches the contracted rate of AWP minus 15% discount. Dispensing fee and allowed totals sum correctly.
+
+","28","Scenario 6: Contract Pricing Calculations - Consistent (Expected PASS)","","2026-05-25","passed","2026-05-25","Pharmacy Drug Pricing - AI Validation","","",""
+"
+### AI Validation Status: **PASS**
+**Reasoning:**
+Generic validation completed. No errors, reject codes, or anomalies detected in the provided JSON payload.
+
+","186","Scenario 7: Contract Pricing Calculations - Discrepancy (Expected FAIL)","","2026-05-25","failed","2026-05-25","Pharmacy Drug Pricing - AI Validation","","",""
+"
+### AI Validation Status: **FAIL**
+**Reasoning:**
+The claim adjudication was rejected by the processor. Claim rejected with code 75 (Prior Authorization Required). The drug requested is a specialty medication and is restricted unless a prior authorization (PA) approval is registered for the patient.
+
+**Possible Root Cause:**
+Member does not have an active prior authorization approval on file for this specific National Drug Code (NDC).
+","49","Scenario 2: Rejected Specialty Drug Humira (Expected FAIL - Missing PA)","","2026-05-25","passed","2026-05-25","Healthcare Pharmacy Claim Adjudication - AI Validation","","",""
+"
+### AI Validation Status: **FAIL**
+**Reasoning:**
+The claim has been rejected with a reject code of '70' indicating that the product/service is not covered due to being non-formulary. The rejection details do not provide any additional information on how to resolve this issue.
+
+**Possible Root Cause:**
+Patient may need to consult their healthcare provider or pharmacist to explore alternative treatment options.
+","41378","Scenario 3: Rejected Non-Formulary Nexium (Expected FAIL - Drug Excluded)","","2026-05-25","failed","2026-05-25","Healthcare Pharmacy Claim Adjudication - AI Validation","","",""
+"","1","Scenario 3: Rejected Non-Formulary Nexium (Expected FAIL - Drug Excluded)","","2026-05-25","failed","2026-05-25","Healthcare Pharmacy Claim Adjudication - AI Validation","","",""
+"
+### AI Validation Status: **PASS**
+**Reasoning:**
+The ingredient cost calculation is correct: (Average Wholesale Price (AWP) * (1 - Discount_Percentage)) = 95. The dispensing fee and sales tax calculations are added to produce the correct Final Allowed Amount of 97.5. Patient Copay + Plan Paid equals the Allowed Amount, confirming that the business logic is valid.
+
+","33053","Scenario 7: Contract Pricing Calculations - Discrepancy (Expected FAIL)","","2026-05-25","failed","2026-05-25","Pharmacy Drug Pricing - AI Validation","","",""
+"
+### AI Validation Status: **FAIL**
+**Reasoning:**
+Eligibility check failed. The patient record status is INACTIVE. Coverage was terminated effective the end of the previous calendar month.
+
+**Possible Root Cause:**
+Member coverage has lapsed or been terminated by the employer group.
+","26","Scenario 5: Terminated Member Eligibility Check (Expected FAIL)","","2026-05-25","passed","2026-05-25","Healthcare Member Eligibility - AI Validation","","",""
+"
+### AI Validation Status: **FAIL**
+**Reasoning:**
+Eligibility check failed. The patient record status is INACTIVE. Coverage was terminated effective the end of the previous calendar month.
+
+**Possible Root Cause:**
+Member coverage has lapsed or been terminated by the employer group.
+","31","Scenario 5: Terminated Member Eligibility Check (Expected FAIL)","","2026-05-25","passed","2026-05-25","Healthcare Member Eligibility - AI Validation","","",""
+"
+### AI Validation Status: **FAIL**
+**Reasoning:**
+The member status is INACTIVE, which indicates that the member is not currently eligible for coverage. The effective coverage dates do not encompass the current transaction date.
+
+**Possible Root Cause:**
+Member ineligibility due to inactive status
+","30114","Scenario 5: Terminated Member Eligibility Check (Expected FAIL)","","2026-05-25","failed","2026-05-25","Healthcare Member Eligibility - AI Validation","","",""
+"
+### AI Validation Status: **PASS**
+**Reasoning:**
+The pharmacy claim was successfully adjudicated. Status is PAID. Ingredient costs, dispensing fees, and copay calculations are consistent with standard Tier 1 generic plan benefits (patient copay of $10.00).
+
+","167","Scenario 1: Paid Metformin Generic Claim (Expected PASS)","","2026-05-25","passed","2026-05-25","Healthcare Pharmacy Claim Adjudication - AI Validation","","",""
+"
+### AI Validation Status: **PASS**
+**Reasoning:**
+Generic validation completed. No errors, reject codes, or anomalies detected in the provided JSON payload.
+
+","142","Scenario 6: Contract Pricing Calculations - Consistent (Expected PASS)","","2026-05-25","failed","2026-05-25","Pharmacy Drug Pricing - AI Validation","","",""
+"
+### AI Validation Status: **FAIL**
+**Reasoning:**
+The claim has been rejected with a reject code of '75' (Prior Authorization Required). The rejection details indicate that prior authorization is necessary for the Humira 40mg Pen prescription. However, there is no additional information provided to support this rejection.
+
+**Possible Root Cause:**
+Missing or incomplete prior authorization request
+","41664","Scenario 2: Rejected Specialty Drug Humira (Expected FAIL - Missing PA)","","2026-05-25","passed","2026-05-25","Healthcare Pharmacy Claim Adjudication - AI Validation","","",""
+"
+### AI Validation Status: **FAIL**
+**Reasoning:**
+Eligibility check failed. The patient record status is INACTIVE. Coverage was terminated effective the end of the previous calendar month.
+
+**Possible Root Cause:**
+Member coverage has lapsed or been terminated by the employer group.
+","28","Scenario 5: Terminated Member Eligibility Check (Expected FAIL)","","2026-05-25","passed","2026-05-25","Healthcare Member Eligibility - AI Validation","","",""
+"
+### AI Validation Status: **PASS**
+**Reasoning:**
+The claim has been successfully adjudicated with a PAID status. The copay amount of $10 matches the standard configuration for generic drugs. All pricing adjustments and patient responsibility amounts are within expected ranges.
+
+","56702","Scenario 1: Paid Metformin Generic Claim (Expected PASS)","","2026-05-25","passed","2026-05-25","Healthcare Pharmacy Claim Adjudication - AI Validation","","",""
+"
+### AI Validation Status: **PASS**
+**Reasoning:**
+Eligibility check verified. Patient is ACTIVE under Group ID RX8821, Plan code PPO-GOLD. Copay and deductible accumulators are initialized correctly.
+
+","28","Scenario 4: Active Member Eligibility Check (Expected PASS)","","2026-05-25","passed","2026-05-25","Healthcare Member Eligibility - AI Validation","","",""
+"
+### AI Validation Status: **PASS**
+**Reasoning:**
+The pharmacy claim was successfully adjudicated. Status is PAID. Ingredient costs, dispensing fees, and copay calculations are consistent with standard Tier 1 generic plan benefits (patient copay of $10.00).
+
+","134","Scenario 1: Paid Metformin Generic Claim (Expected PASS)","","2026-05-25","passed","2026-05-25","Healthcare Pharmacy Claim Adjudication - AI Validation","","",""
+"
+### AI Validation Status: **PASS**
+**Reasoning:**
+The pharmacy claim was successfully adjudicated. Status is PAID. Ingredient costs, dispensing fees, and copay calculations are consistent with standard Tier 1 generic plan benefits (patient copay of $10.00).
+
+","158","Scenario 1: Paid Metformin Generic Claim (Expected PASS)","","2026-05-25","passed","2026-05-25","Healthcare Pharmacy Claim Adjudication - AI Validation","","",""
+"
+### AI Validation Status: **FAIL**
+**Reasoning:**
+The claim adjudication was rejected by the processor. Claim rejected with code 75 (Prior Authorization Required). The drug requested is a specialty medication and is restricted unless a prior authorization (PA) approval is registered for the patient.
+
+**Possible Root Cause:**
+Member does not have an active prior authorization approval on file for this specific National Drug Code (NDC).
+","50","Scenario 2: Rejected Specialty Drug Humira (Expected FAIL - Missing PA)","","2026-05-25","failed","2026-05-25","Healthcare Pharmacy Claim Adjudication - AI Validation","","",""
+"
+### AI Validation Status: **PASS**
+**Reasoning:**
+Generic validation completed. No errors, reject codes, or anomalies detected in the provided JSON payload.
+
+","150","Scenario 5: Terminated Member Eligibility Check (Expected FAIL)","","2026-05-25","failed","2026-05-25","Healthcare Member Eligibility - AI Validation","","",""
+"","1","Scenario 4: Active Member Eligibility Check (Expected PASS)","","2026-05-25","skipped","2026-05-25","Healthcare Member Eligibility - AI Validation","","",""
+"
+### AI Validation Status: **PASS**
+**Reasoning:**
+Ingredient cost calculation validated: (Average Wholesale Price (AWP) * (1 - Discount_Percentage)) = 85.00. Dispensing fee and sales tax calculations added to produce the correct Final Allowed Amount of 87.50. Patient Copay + Plan Paid equals the Allowed Amount, confirming accurate reimbursement.
+
+","39455","Scenario 6: Contract Pricing Calculations - Consistent (Expected PASS)","","2026-05-25","failed","2026-05-25","Pharmacy Drug Pricing - AI Validation","","",""

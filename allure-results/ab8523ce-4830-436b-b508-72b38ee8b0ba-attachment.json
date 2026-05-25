@@ -1,0 +1,5 @@
+{
+  "status": "FAIL",
+  "reasoning": "The claim has been rejected with a reject code of '75' (Prior Authorization Required). The rejection details indicate that prior authorization is necessary for the Humira 40mg Pen prescription. However, there is no additional information provided to support this rejection.",
+  "possibleRootCause": "Missing or incomplete prior authorization request"
+}
